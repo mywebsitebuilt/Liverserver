@@ -8,12 +8,13 @@
   <button onclick="getMessage()">Get Server Message</button>
   <p id="msg"></p>
 
-  <script>
-    async function getMessage() {
-      const res = await fetch('http://192.168.156.236:5000/api/hello');
-      const data = await res.json();
-      document.getElementById('msg').textContent = data.message;
-    }
-  </script>
+ <script>
+  async function getMessage() {
+    const res = await fetch('https://9a9f-xxxx.ngrok-free.app/api/hello');
+    const data = await res.json();
+    document.getElementById('msg').textContent = data.message;
+  }
+</script>
+
 </body>
 </html>
